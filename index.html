@@ -1,0 +1,278 @@
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="en" dir="ltr"> <!-- English -->
+<head> <!-- Head start -->
+  <meta charset="UTF-8"> <!-- Encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+  <title>Software Engineer Portfolio | Laith</title> <!-- Title -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <!-- Inter font -->
+  <link rel="stylesheet" href="styles.css"> <!-- CSS -->
+</head> <!-- Head end -->
+<body> <!-- Body start -->
+  <div id="loader" class="loader"> <!-- Loader -->
+    <div class="spinner"></div> <!-- Spinner -->
+    <p class="loader-text">Loading experience…</p> <!-- Text -->
+  </div> <!-- Loader end -->
+
+  <div class="bg-grad"></div> <!-- Background -->
+  <div class="scrollbar" id="scrollbar"></div> <!-- Scroll progress -->
+
+  <header class="site-header"> <!-- Header -->
+    <a class="logo" href="#home">LH</a> <!-- Logo -->
+    <nav class="nav"> <!-- Nav -->
+      <a href="#home" class="nav-link">Home</a> <!-- Link -->
+      <a href="#about" class="nav-link">About</a> <!-- Link -->
+      <a href="#skills" class="nav-link">Skills</a> <!-- Link -->
+      <a href="#timeline" class="nav-link">Timeline</a> <!-- Link -->
+      <a href="#projects" class="nav-link">Projects</a> <!-- Link -->
+      <a href="#certificates" class="nav-link">Certificates</a> <!-- New link -->
+      <a href="#comments" class="nav-link">Comments</a> <!-- New link -->
+      <a href="#blog" class="nav-link">Blog</a> <!-- Link -->
+      <a href="#contact" class="nav-link btn">Contact</a> <!-- Button -->
+    </nav> <!-- Nav end -->
+    <div class="header-actions"> <!-- Actions -->
+      <button class="btn soft" id="themeToggle" aria-label="Toggle theme">🌙</button> <!-- Theme -->
+      <button class="btn soft" id="contrastToggle" aria-label="Toggle high contrast">⚡</button> <!-- Contrast -->
+      <button class="nav-toggle" aria-label="Toggle Menu">☰</button> <!-- Mobile -->
+    </div> <!-- Actions end -->
+  </header> <!-- Header end -->
+
+  <main id="home"> <!-- Main -->
+    <section class="hero reveal stagger-parent"> <!-- Hero -->
+      <div class="hero-art"> <!-- Visuals -->
+        <canvas id="particles"></canvas> <!-- Particles -->
+        <svg class="gooey" viewBox="0 0 600 600" aria-hidden="true"> <!-- Blobs -->
+          <defs> <!-- Defs -->
+            <filter id="goo"> <!-- Filter -->
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur> <!-- Blur -->
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -10" result="goo"></feColorMatrix> <!-- Matrix -->
+              <feBlend in="SourceGraphic" in2="goo"></feBlend> <!-- Blend -->
+            </filter> <!-- Filter end -->
+          </defs> <!-- Defs end -->
+          <g filter="url(#goo)"> <!-- Apply filter -->
+            <circle class="blob a" cx="180" cy="200" r="70"></circle> <!-- Blob A -->
+            <circle class="blob b" cx="260" cy="260" r="55"></circle> <!-- Blob B -->
+            <circle class="blob c" cx="120" cy="300" r="45"></circle> <!-- Blob C -->
+          </g> <!-- Group end -->
+        </svg> <!-- SVG end -->
+        <div class="wave"></div> <!-- Wave -->
+      </div> <!-- Art end -->
+      <div class="hero-content stagger"> <!-- Text -->
+        <h1 class="headline"> <!-- Headline -->
+          Software Engineer crafting precise, polished products. <!-- Text -->
+          <span class="accent-underline"></span> <!-- Underline -->
+        </h1> <!-- Headline end -->
+        <p class="subhead"> <!-- Subhead -->
+          I turn ideas into fast, secure, and scalable applications using JavaScript, PHP, Flutter, and more. <!-- Copy -->
+        </p> <!-- Subhead end -->
+        <div class="cta"> <!-- CTA -->
+          <a href="#projects" class="btn primary ripple">See Work</a> <!-- Button -->
+          <a href="#contact" class="btn ghost glow">Contact me</a> <!-- Button -->
+          <a href="#" class="btn soft">Resume</a> <!-- Button -->
+        </div> <!-- CTA end -->
+      </div> <!-- Content end -->
+    </section> <!-- Hero end -->
+
+    <section id="about" class="section reveal stagger-parent"> <!-- About -->
+      <h2 class="section-title stagger">About</h2> <!-- Title -->
+      <p class="section-text stagger"> <!-- Text -->
+        I’m <strong>Laith</strong>, a software engineer focused on UX quality and performance.
+        I design clean systems with robust security and premium user experience across Web, Mobile, and Desktop. <!-- Copy -->
+      </p> <!-- Text end -->
+      <ul class="about-highlights"> <!-- Highlights -->
+        <li class="stagger">High performance with lazy-loading and code-splitting.</li> <!-- Item -->
+        <li class="stagger">Security-by-default: XSS, CSRF, SQLi mitigations.</li> <!-- Item -->
+        <li class="stagger">Responsive, accessible, motion-friendly design.</li> <!-- Item -->
+      </ul> <!-- Highlights end -->
+    </section> <!-- About end -->
+
+    <section id="skills" class="section reveal stagger-parent"> <!-- Skills -->
+      <h2 class="section-title stagger">Skills</h2> <!-- Title -->
+      <div class="skills-grid"> <!-- Grid -->
+        <div class="skill-card stagger">JavaScript</div> <!-- Item -->
+        <div class="skill-card stagger">TypeScript</div> <!-- Item -->
+        <div class="skill-card stagger">React</div> <!-- Item -->
+        <div class="skill-card stagger">Node.js</div> <!-- Item -->
+        <div class="skill-card stagger">PHP</div> <!-- Item -->
+        <div class="skill-card stagger">MySQL</div> <!-- Item -->
+        <div class="skill-card stagger">Flutter</div> <!-- Item -->
+        <div class="skill-card stagger">Docker</div> <!-- Item -->
+        <div class="skill-card stagger">CI/CD</div> <!-- Item -->
+        <div class="skill-card stagger">UI/UX</div> <!-- Item -->
+      </div> <!-- Grid end -->
+    </section> <!-- Skills end -->
+
+    <section id="timeline" class="section reveal stagger-parent"> <!-- Timeline -->
+      <h2 class="section-title stagger">Timeline</h2> <!-- Title -->
+      <ol class="timeline"> <!-- List -->
+        <li class="tl-item stagger"> <!-- Item -->
+          <div class="tl-dot"></div> <!-- Dot -->
+          <div class="tl-card"> <!-- Card -->
+            <h3>Software Engineer — Freelance</h3> <!-- Role -->
+            <span class="tl-meta">2024 — Present</span> <!-- Dates -->
+            <p>Building full-stack apps for clients: clinic platform, repair tracking, dashboards.</p> <!-- Desc -->
+          </div> <!-- Card end -->
+        </li> <!-- Item end -->
+        <li class="tl-item stagger"> <!-- Item -->
+          <div class="tl-dot"></div> <!-- Dot -->
+          <div class="tl-card"> <!-- Card -->
+            <h3>Teaching Assistant — University</h3> <!-- Role -->
+            <span class="tl-meta">2023 — 2024</span> <!-- Dates -->
+            <p>Helped students with data structures, DB design, and Flutter basics.</p> <!-- Desc -->
+          </div> <!-- Card end -->
+        </li> <!-- Item end -->
+        <li class="tl-item stagger"> <!-- Item -->
+          <div class="tl-dot"></div> <!-- Dot -->
+          <div class="tl-card"> <!-- Card -->
+            <h3>CS Student — University of Petra</h3> <!-- Role -->
+            <span class="tl-meta">2019 — 2023</span> <!-- Dates -->
+            <p>Graduation projects on service systems, security, and performance.</p> <!-- Desc -->
+          </div> <!-- Card end -->
+        </li> <!-- Item end -->
+      </ol> <!-- List end -->
+    </section> <!-- Timeline end -->
+
+    <section id="projects" class="section reveal stagger-parent"> <!-- Projects -->
+      <h2 class="section-title stagger">Selected Projects</h2> <!-- Title -->
+      <div class="projects"> <!-- Grid -->
+        <article class="project-card stagger"> <!-- Card -->
+          <div class="project-thumb skeleton"></div> <!-- Img -->
+          <div class="project-body"> <!-- Body -->
+            <h3 class="project-title">University Clinic Platform</h3> <!-- Title -->
+            <p class="project-desc">Bookings, prescriptions, QR, roles, and advanced security.</p> <!-- Desc -->
+            <div class="project-tags"> <!-- Tags -->
+              <span class="tag">PHP</span> <span class="tag">MySQL</span> <span class="tag">Flutter</span> <!-- Tags -->
+            </div> <!-- Tags end -->
+            <a href="#" class="btn small ripple">Details</a> <!-- Button -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+        <article class="project-card stagger"> <!-- Card -->
+          <div class="project-thumb skeleton"></div> <!-- Img -->
+          <div class="project-body"> <!-- Body -->
+            <h3 class="project-title">Device Repair Tracking</h3> <!-- Title -->
+            <p class="project-desc">QR codes, status tracking, A4 invoices, SMS updates.</p> <!-- Desc -->
+            <div class="project-tags"> <!-- Tags -->
+              <span class="tag">JavaScript</span> <span class="tag">PHP</span> <span class="tag">SQL</span> <!-- Tags -->
+            </div> <!-- Tags end -->
+            <a href="#" class="btn small ripple">Details</a> <!-- Button -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+        <article class="project-card stagger"> <!-- Card -->
+          <div class="project-thumb skeleton"></div> <!-- Img -->
+          <div class="project-body"> <!-- Body -->
+            <h3 class="project-title">Performance Dashboard</h3> <!-- Title -->
+            <p class="project-desc">Interactive charts, KPI tracking, smart alerts.</p> <!-- Desc -->
+            <div class="project-tags"> <!-- Tags -->
+              <span class="tag">Node.js</span> <span class="tag">Express</span> <span class="tag">Docker</span> <!-- Tags -->
+            </div> <!-- Tags end -->
+            <a href="#" class="btn small ripple">Details</a> <!-- Button -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+      </div> <!-- Grid end -->
+    </section> <!-- Projects end -->
+
+    <section id="certificates" class="section reveal stagger-parent"> <!-- Certificates section -->
+      <h2 class="section-title stagger">Certificates</h2> <!-- Title -->
+      <div class="cert-grid"> <!-- Grid of certs -->
+        <article class="cert-card stagger"> <!-- Card -->
+          <div class="cert-badge">JS</div> <!-- Badge -->
+          <div class="cert-body"> <!-- Body -->
+            <h3 class="cert-title">JavaScript Algorithms & Data Structures</h3> <!-- Title -->
+            <p class="cert-meta">freeCodeCamp • 2024</p> <!-- Meta -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+        <article class="cert-card stagger"> <!-- Card -->
+          <div class="cert-badge">SEC</div> <!-- Badge -->
+          <div class="cert-body"> <!-- Body -->
+            <h3 class="cert-title">Web Security Fundamentals</h3> <!-- Title -->
+            <p class="cert-meta">Coursera • 2023</p> <!-- Meta -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+        <article class="cert-card stagger"> <!-- Card -->
+          <div class="cert-badge">CLOUD</div> <!-- Badge -->
+          <div class="cert-body"> <!-- Body -->
+            <h3 class="cert-title">Cloud Practitioner</h3> <!-- Title -->
+            <p class="cert-meta">AWS • 2023</p> <!-- Meta -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+      </div> <!-- Grid end -->
+    </section> <!-- Certificates end -->
+
+    <section id="comments" class="section reveal stagger-parent"> <!-- Comments section -->
+      <h2 class="section-title stagger">Comments</h2> <!-- Title -->
+      <form id="commentForm" class="comment-form stagger"> <!-- Comment form -->
+        <div class="form-row"> <!-- Row -->
+          <input type="text" id="c_name" placeholder="Name" required> <!-- Name -->
+          <input type="text" id="c_role" placeholder="Role (optional)"> <!-- Role -->
+        </div> <!-- Row end -->
+        <textarea id="c_text" rows="4" placeholder="Write your comment…" required></textarea> <!-- Body -->
+        <div class="form-actions"> <!-- Actions -->
+          <button class="btn primary ripple" type="submit">Add comment</button> <!-- Submit -->
+          <span class="form-hint">Comments are moderated and stored securely.</span> <!-- Hint -->
+        </div> <!-- Actions end -->
+      </form> <!-- Form end -->
+      <div id="commentsList" class="comments-list stagger"> <!-- List -->
+        <!-- Comments render here dynamically --> <!-- Placeholder -->
+      </div> <!-- List end -->
+    </section> <!-- Comments end -->
+
+    <section id="blog" class="section reveal stagger-parent"> <!-- Blog -->
+      <h2 class="section-title stagger">Blog</h2> <!-- Title -->
+      <div class="blog-grid"> <!-- Grid -->
+        <article class="blog-card stagger"> <!-- Card -->
+          <a href="#" class="blog-thumb-link"><div class="blog-thumb"></div></a> <!-- Thumb -->
+          <div class="blog-body"> <!-- Body -->
+            <a class="blog-title link-underline" href="#">Optimizing JS bundles with code-splitting</a> <!-- Title -->
+            <p class="blog-excerpt">A walkthrough of dynamic imports, route-level splits, and measuring the wins.</p> <!-- Excerpt -->
+            <div class="blog-meta"><span>5 min read</span><span>•</span><span>Performance</span></div> <!-- Meta -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+        <article class="blog-card stagger"> <!-- Card -->
+          <a href="#" class="blog-thumb-link"><div class="blog-thumb"></div></a> <!-- Thumb -->
+          <div class="blog-body"> <!-- Body -->
+            <a class="blog-title link-underline" href="#">Defensive patterns against common web threats</a> <!-- Title -->
+            <p class="blog-excerpt">Practical XSS, CSRF, and SQLi protections you can apply today.</p> <!-- Excerpt -->
+            <div class="blog-meta"><span>7 min read</span><span>•</span><span>Security</span></div> <!-- Meta -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+        <article class="blog-card stagger"> <!-- Card -->
+          <a href="#" class="blog-thumb-link"><div class="blog-thumb"></div></a> <!-- Thumb -->
+          <div class="blog-body"> <!-- Body -->
+            <a class="blog-title link-underline" href="#">Motion that matters: accessible animations</a> <!-- Title -->
+            <p class="blog-excerpt">How to add motion without harming accessibility or performance.</p> <!-- Excerpt -->
+            <div class="blog-meta"><span>6 min read</span><span>•</span><span>UX</span></div> <!-- Meta -->
+          </div> <!-- Body end -->
+        </article> <!-- Card end -->
+      </div> <!-- Grid end -->
+    </section> <!-- Blog end -->
+
+    <section id="contact" class="section reveal stagger-parent"> <!-- Contact -->
+      <h2 class="section-title stagger">Contact</h2> <!-- Title -->
+      <form class="contact-form stagger" id="contactForm"> <!-- Form -->
+        <div class="form-row"> <!-- Row -->
+          <input type="text" id="name" name="name" placeholder="Full name" required> <!-- Name -->
+          <input type="email" id="email" name="email" placeholder="Email address" required> <!-- Email -->
+        </div> <!-- Row end -->
+        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea> <!-- Message -->
+        <input type="hidden" id="recaptcha_token" name="recaptcha_token" value=""> <!-- reCAPTCHA -->
+        <div class="form-actions"> <!-- Actions -->
+          <button class="btn primary ripple" id="sendBtn" type="submit">Send</button> <!-- Submit -->
+          <span class="form-hint">API endpoint configurable in <code>script.js</code>.</span> <!-- Hint -->
+        </div> <!-- Actions end -->
+      </form> <!-- Form end -->
+    </section> <!-- Contact end -->
+  </main> <!-- Main end -->
+
+  <footer class="site-footer"> <!-- Footer -->
+    <p>© <span id="year"></span> Laith Hindawi — All rights reserved.</p> <!-- Copyright -->
+    <div class="socials"> <!-- Socials -->
+      <a href="#" aria-label="GitHub" class="social glow">GitHub</a> <!-- Link -->
+      <a href="#" aria-label="LinkedIn" class="social glow">LinkedIn</a> <!-- Link -->
+      <a href="#" aria-label="Email" class="social glow">Email</a> <!-- Link -->
+    </div> <!-- Socials end -->
+  </footer> <!-- Footer end -->
+
+  <script src="script.js"></script> <!-- JS -->
+</body> <!-- Body end -->
+</html> <!-- HTML end -->
